@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nota Anatomi & Fisiologi — Sistem Tubuh Manusia</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    background: #f7f8fa;
+    color: #1f2328;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #3b82d4 100%);
+    color: #fff;
+    text-align: center;
+    padding: 48px 24px 36px;
+  }
+  header h1 { font-size: 2.2em; font-weight: 700; letter-spacing: 0.5px; }
+  header p { font-size: 1.05em; margin-top: 8px; opacity: 0.88; }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.82em;
+    margin-top: 14px;
+  }
+
+  nav {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  nav a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #f0f4ff;
+    color: #3b82d4;
+    text-decoration: none;
+    font-size: 0.82em;
+    font-weight: 600;
+    border: 1px solid #d1dff7;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: #3b82d4; color: #fff; }
+
+  main { max-width: 860px; margin: 0 auto; padding: 32px 20px 60px; }
+
+  .section {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .section-header {
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .section-icon {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4em;
+    flex-shrink: 0;
+  }
+  .section-header h2 { font-size: 1.22em; font-weight: 700; }
+  .section-header .subtitle { font-size: 0.83em; color: #57606a; margin-top: 2px; }
+
+  .s1 .section-header { background: #fef3c7; border-bottom: 2px solid #f59e0b; }
+  .s1 .section-icon { background: #f59e0b; color: #fff; }
+  .s2 .section-header { background: #ede9fe; border-bottom: 2px solid #7c3aed; }
+  .s2 .section-icon { background: #7c3aed; color: #fff; }
+  .s3 .section-header { background: #fce7f3; border-bottom: 2px solid #db2777; }
+  .s3 .section-icon { background: #db2777; color: #fff; }
+  .s4 .section-header { background: #dbeafe; border-bottom: 2px solid #2563eb; }
+  .s4 .section-icon { background: #2563eb; color: #fff; }
+  .s5 .section-header { background: #d1fae5; border-bottom: 2px solid #059669; }
+  .s5 .section-icon { background: #059669; color: #fff; }
+  .s6 .section-header { background: #fee2e2; border-bottom: 2px solid #dc2626; }
+  .s6 .section-icon { background: #dc2626; color: #fff; }
+  .s7 .section-header { background: #e0f2fe; border-bottom: 2px solid #0284c7; }
+  .s7 .section-icon { background: #0284c7; color: #fff; }
+  .s8 .section-header { background: #f0fdf4; border-bottom: 2px solid #16a34a; }
+  .s8 .section-icon { background: #16a34a; color: #fff; }
+  .s9 .section-header { background: #fff7ed; border-bottom: 2px solid #ea580c; }
+  .s9 .section-icon { background: #ea580c; color: #fff; }
+  .s10 .section-header { background: #f5f3ff; border-bottom: 2px solid #6d28d9; }
+  .s10 .section-icon { background: #6d28d9; color: #fff; }
+  .s11 .section-header { background: #fdf2f8; border-bottom: 2px solid #9d174d; }
+  .s11 .section-icon { background: #9d174d; color: #fff; }
+
+  .section-body { padding: 24px 28px; }
+
+  .diagram-wrap {
+    text-align: center;
+    margin: 18px 0 22px;
+  }
+  .diagram-wrap svg { max-width: 100%; }
+  .diagram-caption {
+    font-size: 0.78em;
+    color: #57606a;
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  h3 { font-size: 1em; font-weight: 700; color: #1e3a5f; margin: 20px 0 8px; border-left: 3px solid #3b82d4; padding-left: 10px; }
+  h4 { font-size: 0.9em; font-weight: 700; color: #374151; margin: 14px 0 6px; }
+  p { margin-bottom: 10px; }
+  ul, ol { padding-left: 22px; margin-bottom: 10px; }
+  li { margin-bottom: 4px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 14px 0; }
+  @media(max-width:600px){ .two-col { grid-template-columns: 1fr; } }
+
+  .info-box {
+    background: #f7f8fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .info-box h4 { color: #3b82d4; margin-top: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88em;
+    margin: 12px 0;
+  }
+  th {
+    background: #f0f4ff;
+    color: #1e3a5f;
+    text-align: left;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    font-weight: 700;
+  }
+  td {
+    padding: 7px 12px;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f7f8fa; }
+
+  .key-fact {
+    background: #eff6ff;
+    border-left: 4px solid #3b82d4;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 0.9em;
+  }
+  .key-fact strong { color: #1e40af; }
+
+  footer {
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    padding: 18px;
+    color: #57606a;
+    font-size: 0.78em;
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📚 Nota Anatomi & Fisiologi</h1>
+  <p>Modul Lengkap Sistem Tubuh Manusia</p>
+  <span class="badge">11 Sistem Utama Tubuh Manusia</span>
+</header>
+
+<nav>
+  <a href="#s1">Integumen</a>
+  <a href="#s2">Skeletal</a>
+  <a href="#s3">Otot</a>
+  <a href="#s4">Saraf</a>
+  <a href="#s5">Endokrin</a>
+  <a href="#s6">Peredaran Darah</a>
+  <a href="#s7">Limfatik</a>
+  <a href="#s8">Pernafasan</a>
+  <a href="#s9">Penghadaman</a>
+  <a href="#s10">Urinari</a>
+  <a href="#s11">Reproduktif</a>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════════════════
+     1. SISTEM INTEGUMEN / KULIT
+══════════════════════════════════════════════════ -->
+<div class="section s1" id="s1">
+  <div class="section-header">
+    <div class="section-icon">🧴</div>
+    <div>
+      <h2>1. Sistem Integumen / Kulit</h2>
+      <div class="subtitle">Integumentary System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg" width="500" height="240">
+        <!-- Background -->
+        <rect width="500" height="240" fill="#fff8f0" rx="10"/>
+        <!-- Epidermis layer -->
+        <rect x="30" y="30" width="440" height="50" fill="#f5c89a" rx="4"/>
+        <text x="50" y="60" font-size="13" font-weight="bold" fill="#7c4d1e">Epidermis</text>
+        <text x="50" y="75" font-size="10" fill="#7c4d1e">Stratum Corneum → Basale</text>
+        <!-- Dermis layer -->
+        <rect x="30" y="82" width="440" height="70" fill="#e8a57a" rx="4"/>
+        <text x="50" y="102" font-size="13" font-weight="bold" fill="#5a2d0c">Dermis</text>
+        <!-- Hair follicle -->
+        <ellipse cx="160" cy="90" rx="8" ry="6" fill="#b8763e"/>
+        <line x1="160" y1="96" x2="160" y2="152" stroke="#b8763e" stroke-width="4"/>
+        <text x="125" y="165" font-size="10" fill="#5a2d0c">Folikel Rambut</text>
+        <!-- Sweat gland -->
+        <path d="M280 90 Q295 120 280 150" stroke="#5b9bd5" stroke-width="3" fill="none"/>
+        <circle cx="280" cy="90" r="5" fill="#5b9bd5"/>
+        <text x="255" y="165" font-size="10" fill="#1a4a7a">Kelenjar Peluh</text>
+        <!-- Sebaceous gland -->
+        <ellipse cx="360" cy="115" rx="14" ry="8" fill="#f7e06a"/>
+        <text x="335" y="165" font-size="10" fill="#7a6000">Kelenjar Sebum</text>
+        <!-- Blood vessels -->
+        <path d="M80 130 Q100 120 120 130 Q140 140 160 130" stroke="#e63946" stroke-width="2.5" fill="none"/>
+        <text x="60" y="175" font-size="10" fill="#c0392b">Saluran Darah</text>
+        <!-- Hypodermis layer -->
+        <rect x="30" y="154" width="440" height="55" fill="#f2d9bb" rx="4"/>
+        <text x="50" y="178" font-size="13" font-weight="bold" fill="#6b3d14">Hypodermis (Tisu Adipos)</text>
+        <!-- Fat cells -->
+        <circle cx="200" cy="180" r="10" fill="#f9c74f" opacity="0.7"/>
+        <circle cx="230" cy="185" r="9" fill="#f9c74f" opacity="0.7"/>
+        <circle cx="260" cy="178" r="11" fill="#f9c74f" opacity="0.7"/>
+        <circle cx="295" cy="183" r="9" fill="#f9c74f" opacity="0.7"/>
+        <circle cx="325" cy="176" r="10" fill="#f9c74f" opacity="0.7"/>
+        <!-- Nerve ending -->
+        <path d="M420 140 Q430 130 440 140 Q450 150 440 155" stroke="#9b59b6" stroke-width="2" fill="none"/>
+        <text x="400" y="175" font-size="10" fill="#6c3483">Reseptor Saraf</text>
+        <!-- Labels left -->
+        <line x1="30" y1="55" x2="15" y2="55" stroke="#7c4d1e" stroke-width="1"/>
+        <line x1="30" y1="117" x2="15" y2="117" stroke="#5a2d0c" stroke-width="1"/>
+        <line x1="30" y1="181" x2="15" y2="181" stroke="#6b3d14" stroke-width="1"/>
+      </svg>
+      <div class="diagram-caption">Rajah 1.1 — Struktur Lapisan Kulit Manusia</div>
+    </div>
+
+    <h3>Definisi & Fungsi</h3>
+    <p>Sistem integumen merupakan organ terbesar dalam badan manusia, meliputi kulit, rambut, kuku, dan kelenjar berkaitan. Beratnya kira-kira <strong>4–5 kg</strong> dan meliputi permukaan seluas <strong>1.5–2 m²</strong>.</p>
+
+    <div class="two-col">
+      <div class="info-box">
+        <h4>Fungsi Utama</h4>
+        <ul>
+          <li>Perlindungan fizik & kimia</li>
+          <li>Pengaturan suhu badan</li>
+          <li>Sensasi (sentuhan, sakit, haba)</li>
+          <li>Sintesis Vitamin D</li>
+          <li>Penyerapan bahan tertentu</li>
+          <li>Ekskresi melalui peluh</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h4>Struktur Aksesori</h4>
+        <ul>
+          <li><strong>Rambut:</strong> keratin, folikel rambut</li>
+          <li><strong>Kuku:</strong> lempeng keratin keras</li>
+          <li><strong>Kelenjar Sebum:</strong> minyak/sebum</li>
+          <li><strong>Kelenjar Peluh (Ekrin):</strong> termoregulasi</li>
+          <li><strong>Kelenjar Apokrin:</strong> ketiak & inguinal</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Lapisan Kulit</h3>
+    <table>
+      <tr><th>Lapisan</th><th>Nama Lapisan Epidermis</th><th>Ciri Utama</th></tr>
+      <tr><td>Epidermis (terluar)</td><td>Stratum Corneum</td><td>Sel mati, keratin, kalis air</td></tr>
+      <tr><td></td><td>Stratum Granulosum</td><td>Granul keratohyalin</td></tr>
+      <tr><td></td><td>Stratum Spinosum</td><td>Sel desmosomes, Langerhans</td></tr>
+      <tr><td></td><td>Stratum Basale</td><td>Pembelahan sel aktif, melanosit</td></tr>
+      <tr><td>Dermis</td><td>Papillary & Reticular</td><td>Kolagen, elastin, folikel rambut, saluran darah</td></tr>
+      <tr><td>Hypodermis</td><td>Tisu Subkutan</td><td>Lemak (adiposit), penebat haba</td></tr>
+    </table>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Melanosit di stratum basale menghasilkan melanin yang menentukan warna kulit dan melindungi DNA daripada sinaran UV.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     2. SISTEM SKELETAL / RANGKA
+══════════════════════════════════════════════════ -->
+<div class="section s2" id="s2">
+  <div class="section-header">
+    <div class="section-icon">🦴</div>
+    <div>
+      <h2>2. Sistem Skeletal / Rangka</h2>
+      <div class="subtitle">Skeletal System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" width="500" height="320">
+        <rect width="500" height="320" fill="#f5f3ff" rx="10"/>
+        <!-- Skull -->
+        <ellipse cx="250" cy="50" rx="42" ry="38" fill="#e9d5a1" stroke="#9b7a3e" stroke-width="2"/>
+        <ellipse cx="250" cy="62" rx="22" ry="14" fill="#d4b483" stroke="#9b7a3e" stroke-width="1"/>
+        <!-- Spine -->
+        <rect x="242" y="88" width="16" height="120" fill="#e9d5a1" rx="3" stroke="#9b7a3e" stroke-width="1.5"/>
+        <line x1="242" y1="100" x2="258" y2="100" stroke="#9b7a3e" stroke-width="1"/>
+        <line x1="242" y1="115" x2="258" y2="115" stroke="#9b7a3e" stroke-width="1"/>
+        <line x1="242" y1="130" x2="258" y2="130" stroke="#9b7a3e" stroke-width="1"/>
+        <line x1="242" y1="145" x2="258" y2="145" stroke="#9b7a3e" stroke-width="1"/>
+        <line x1="242" y1="160" x2="258" y2="160" stroke="#9b7a3e" stroke-width="1"/>
+        <line x1="242" y1="175" x2="258" y2="175" stroke="#9b7a3e" stroke-width="1"/>
+        <line x1="242" y1="190" x2="258" y2="190" stroke="#9b7a3e" stroke-width="1"/>
+        <!-- Ribcage -->
+        <path d="M250 100 Q210 110 205 140 Q210 150 250 145" stroke="#9b7a3e" stroke-width="2.5" fill="none"/>
+        <path d="M250 100 Q290 110 295 140 Q290 150 250 145" stroke="#9b7a3e" stroke-width="2.5" fill="none"/>
+        <path d="M250 110 Q205 120 200 148" stroke="#9b7a3e" stroke-width="1.5" fill="none"/>
+        <path d="M250 110 Q295 120 300 148" stroke="#9b7a3e" stroke-width="1.5" fill="none"/>
+        <!-- Pelvis -->
+        <path d="M230 208 Q200 220 205 250 Q230 260 250 258 Q270 260 295 250 Q300 220 270 208 Z" fill="#e9d5a1" stroke="#9b7a3e" stroke-width="2"/>
+        <!-- Left arm -->
+        <rect x="185" y="95" width="14" height="80" fill="#e9d5a1" rx="5" stroke="#9b7a3e" stroke-width="1.5" transform="rotate(-10,192,135)"/>
+        <rect x="172" y="172" width="12" height="65" fill="#e9d5a1" rx="4" stroke="#9b7a3e" stroke-width="1.5" transform="rotate(5,178,205)"/>
+        <!-- Right arm -->
+        <rect x="301" y="95" width="14" height="80" fill="#e9d5a1" rx="5" stroke="#9b7a3e" stroke-width="1.5" transform="rotate(10,308,135)"/>
+        <rect x="316" y="172" width="12" height="65" fill="#e9d5a1" rx="4" stroke="#9b7a3e" stroke-width="1.5" transform="rotate(-5,322,205)"/>
+        <!-- Left leg -->
+        <rect x="220" y="258" width="18" height="90" fill="#e9d5a1" rx="5" stroke="#9b7a3e" stroke-width="1.5" transform="rotate(-4,229,303)"/>
+        <rect x="215" y="348" width="16" height="80" fill="#e9d5a1" rx="4" stroke="#9b7a3e" stroke-width="1.5"/>
+        <!-- Right leg -->
+        <rect x="262" y="258" width="18" height="90" fill="#e9d5a1" rx="5" stroke="#9b7a3e" stroke-width="1.5" transform="rotate(4,271,303)"/>
+        <rect x="269" y="348" width="16" height="80" fill="#e9d5a1" rx="4" stroke="#9b7a3e" stroke-width="1.5"/>
+        <!-- Labels -->
+        <text x="300" y="52" font-size="11" fill="#4b3a1a" font-weight="bold">Tengkorak</text>
+        <text x="300" y="140" font-size="11" fill="#4b3a1a" font-weight="bold">Tulang Rusuk</text>
+        <text x="165" y="88" font-size="11" fill="#4b3a1a">Klavikula</text>
+        <text x="270" y="155" font-size="11" fill="#4b3a1a">Tulang Belakang</text>
+        <text x="310" y="240" font-size="11" fill="#4b3a1a">Pelvis</text>
+        <text x="305" y="180" font-size="11" fill="#4b3a1a">Femur</text>
+        <!-- leader lines -->
+        <line x1="298" y1="52" x2="285" y2="52" stroke="#4b3a1a" stroke-width="0.8"/>
+        <line x1="298" y1="140" x2="287" y2="135" stroke="#4b3a1a" stroke-width="0.8"/>
+        <line x1="267" y1="88" x2="255" y2="90" stroke="#4b3a1a" stroke-width="0.8"/>
+        <line x1="268" y1="155" x2="260" y2="150" stroke="#4b3a1a" stroke-width="0.8"/>
+        <line x1="308" y1="237" x2="292" y2="235" stroke="#4b3a1a" stroke-width="0.8"/>
+        <line x1="303" y1="178" x2="320" y2="185" stroke="#4b3a1a" stroke-width="0.8"/>
+      </svg>
+      <div class="diagram-caption">Rajah 2.1 — Rangka Manusia (206 Tulang)</div>
+    </div>
+
+    <h3>Pembahagian Rangka</h3>
+    <div class="two-col">
+      <div class="info-box">
+        <h4>Rangka Aksial (80 tulang)</h4>
+        <ul>
+          <li>Tengkorak (22 tulang)</li>
+          <li>Tulang belakang vertebra (26)</li>
+          <li>Rusuk & sternum (25)</li>
+          <li>Tulang hyoid (1)</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h4>Rangka Apendikular (126 tulang)</h4>
+        <ul>
+          <li>Gelang bahu & lengan atas</li>
+          <li>Lengan bawah, tangan</li>
+          <li>Gelang pinggul (pelvis)</li>
+          <li>Paha, kaki, tapak kaki</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Fungsi Sistem Rangka</h3>
+    <ul>
+      <li><strong>Sokongan:</strong> rangka sebagai kerangka badan</li>
+      <li><strong>Perlindungan:</strong> organ dalaman (otak, jantung, paru-paru)</li>
+      <li><strong>Pergerakan:</strong> titik lekat otot</li>
+      <li><strong>Penghasilan sel darah:</strong> sumsum tulang merah (hematopoiesis)</li>
+      <li><strong>Simpanan mineral:</strong> kalsium (Ca²⁺) dan fosforus (P)</li>
+    </ul>
+
+    <h3>Jenis-Jenis Tulang</h3>
+    <table>
+      <tr><th>Jenis</th><th>Contoh</th><th>Ciri</th></tr>
+      <tr><td>Tulang Panjang</td><td>Femur, humerus</td><td>Diafisis, epifisis, sumsum kuning</td></tr>
+      <tr><td>Tulang Pendek</td><td>Karpal, tarsal</td><td>Spongi, hampir kiub</td></tr>
+      <tr><td>Tulang Pipih</td><td>Sternum, tulang parietal</td><td>Melindungi organ, sumsum merah</td></tr>
+      <tr><td>Tulang Tak Sekata</td><td>Vertebra, mandibula</td><td>Bentuk kompleks</td></tr>
+      <tr><td>Tulang Sesamoid</td><td>Patela (lutut)</td><td>Dalam tendo</td></tr>
+    </table>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Tulang bukan tisu statik — ia sentiasa mengalami pembentukan semula (remodelling) oleh osteoblas (pembina) dan osteoklast (pemecah).</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     3. SISTEM OTOT
+══════════════════════════════════════════════════ -->
+<div class="section s3" id="s3">
+  <div class="section-header">
+    <div class="section-icon">💪</div>
+    <div>
+      <h2>3. Sistem Otot</h2>
+      <div class="subtitle">Muscular System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" width="500" height="200">
+        <rect width="500" height="200" fill="#fdf2f8" rx="10"/>
+        <!-- Skeletal muscle fiber -->
+        <text x="20" y="28" font-size="12" font-weight="bold" fill="#9d174d">A. Otot Rangka</text>
+        <rect x="20" y="35" width="140" height="30" rx="6" fill="#f9a8d4" stroke="#9d174d" stroke-width="1.5"/>
+        <line x1="30" y1="35" x2="30" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <line x1="45" y1="35" x2="45" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <line x1="60" y1="35" x2="60" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <line x1="75" y1="35" x2="75" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <line x1="90" y1="35" x2="90" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <line x1="105" y1="35" x2="105" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <line x1="120" y1="35" x2="120" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <line x1="135" y1="35" x2="135" y2="65" stroke="#9d174d" stroke-width="0.8"/>
+        <text x="25" y="85" font-size="10" fill="#9d174d">Bergaris (Voluntary)</text>
+        <!-- Cardiac muscle -->
+        <text x="185" y="28" font-size="12" font-weight="bold" fill="#7c3aed">B. Otot Jantung</text>
+        <path d="M185 40 Q200 35 215 45 Q230 55 245 45 Q260 35 275 45 Q290 55 305 45 Q320 35 325 45" stroke="#7c3aed" stroke-width="3" fill="none"/>
+        <path d="M185 55 Q200 50 215 60 Q230 70 245 60 Q260 50 275 60 Q290 70 305 60 Q320 50 325 60" stroke="#7c3aed" stroke-width="3" fill="none"/>
+        <text x="190" y="85" font-size="10" fill="#7c3aed">Bergaris, Involuntary</text>
+        <!-- Smooth muscle -->
+        <text x="355" y="28" font-size="12" font-weight="bold" fill="#0284c7">C. Otot Licin</text>
+        <ellipse cx="370" cy="50" rx="8" ry="18" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <ellipse cx="390" cy="50" rx="8" ry="18" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <ellipse cx="410" cy="50" rx="8" ry="18" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <ellipse cx="430" cy="50" rx="8" ry="18" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <ellipse cx="450" cy="50" rx="8" ry="18" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <text x="358" y="85" font-size="10" fill="#0284c7">Tidak Bergaris, Involuntary</text>
+        <!-- Sarcomere diagram -->
+        <text x="20" y="115" font-size="12" font-weight="bold" fill="#9d174d">Sarkomer (Unit Kontraktil)</text>
+        <rect x="20" y="125" width="460" height="40" fill="#fff" stroke="#ccc" rx="4"/>
+        <!-- Z lines -->
+        <line x1="20" y1="125" x2="20" y2="165" stroke="#333" stroke-width="2.5"/>
+        <line x1="250" y1="125" x2="250" y2="165" stroke="#333" stroke-width="2.5"/>
+        <line x1="480" y1="125" x2="480" y2="165" stroke="#333" stroke-width="2.5"/>
+        <!-- Myosin (thick) -->
+        <rect x="100" y="135" width="260" height="10" rx="3" fill="#e63946"/>
+        <text x="195" y="173" font-size="10" fill="#e63946">Myosin (filamen tebal)</text>
+        <!-- Actin (thin) -->
+        <rect x="20" y="130" width="140" height="6" rx="2" fill="#457b9d" opacity="0.85"/>
+        <rect x="340" y="130" width="140" height="6" rx="2" fill="#457b9d" opacity="0.85"/>
+        <rect x="20" y="152" width="140" height="6" rx="2" fill="#457b9d" opacity="0.85"/>
+        <rect x="340" y="152" width="140" height="6" rx="2" fill="#457b9d" opacity="0.85"/>
+        <text x="40" y="185" font-size="10" fill="#457b9d">Aktin (filamen nipis)</text>
+        <text x="380" y="185" font-size="10" fill="#333">← Satu Sarkomer →</text>
+      </svg>
+      <div class="diagram-caption">Rajah 3.1 — Tiga Jenis Otot & Struktur Sarkomer</div>
+    </div>
+
+    <h3>Tiga Jenis Otot</h3>
+    <table>
+      <tr><th>Jenis</th><th>Kawalan</th><th>Lokasi</th><th>Ciri Histologi</th></tr>
+      <tr><td>Otot Rangka</td><td>Sukarela (voluntary)</td><td>Melekat pada tulang</td><td>Bergaris, multinukleus</td></tr>
+      <tr><td>Otot Jantung</td><td>Tidak sukarela</td><td>Dinding jantung</td><td>Bergaris, disk interkalated</td></tr>
+      <tr><td>Otot Licin</td><td>Tidak sukarela</td><td>Organ dalaman, saluran darah</td><td>Tidak bergaris, satu nukleus</td></tr>
+    </table>
+
+    <h3>Mekanisme Kontraksi Otot (Teori Gelongsor Filamen)</h3>
+    <ol>
+      <li>Impuls saraf tiba di persimpangan neuromuskular (NMJ)</li>
+      <li>Asetilkolin (ACh) dibebaskan → depolarisasi sarcolemma</li>
+      <li>Ca²⁺ dibebaskan dari retikulum sarkoplasma</li>
+      <li>Ca²⁺ terikat pada troponin → mendedahkan tapak aktif aktin</li>
+      <li>Kepala myosin terikat pada aktin → power stroke</li>
+      <li>ATP membebaskan kepala myosin → kitaran berulang</li>
+    </ol>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Semua kontraksi otot memerlukan ATP dan Ca²⁺. Kekejangan (rigor mortis) berlaku apabila ATP habis selepas kematian.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     4. SISTEM SARAF
+══════════════════════════════════════════════════ -->
+<div class="section s4" id="s4">
+  <div class="section-header">
+    <div class="section-icon">🧠</div>
+    <div>
+      <h2>4. Sistem Saraf</h2>
+      <div class="subtitle">Nervous System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 230" xmlns="http://www.w3.org/2000/svg" width="500" height="230">
+        <rect width="500" height="230" fill="#eff6ff" rx="10"/>
+        <!-- Neuron body -->
+        <circle cx="120" cy="115" r="35" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+        <circle cx="120" cy="115" r="12" fill="#1d4ed8"/>
+        <text x="108" y="119" font-size="10" fill="#fff" font-weight="bold">Nukleus</text>
+        <text x="88" y="165" font-size="11" fill="#1e40af" font-weight="bold">Badan Sel (Soma)</text>
+        <!-- Dendrites -->
+        <path d="M95 90 Q70 65 50 60" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <path d="M88 100 Q60 80 40 85" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <path d="M88 115 Q55 110 30 108" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <path d="M95 130 Q70 145 55 155" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <text x="12" y="100" font-size="11" fill="#1e40af" font-weight="bold">Dendrit</text>
+        <!-- Axon -->
+        <line x1="155" y1="115" x2="420" y2="115" stroke="#2563eb" stroke-width="3"/>
+        <!-- Myelin sheaths -->
+        <rect x="175" y="107" width="35" height="16" rx="8" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+        <rect x="225" y="107" width="35" height="16" rx="8" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+        <rect x="275" y="107" width="35" height="16" rx="8" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+        <rect x="325" y="107" width="35" height="16" rx="8" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+        <rect x="375" y="107" width="35" height="16" rx="8" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+        <text x="200" y="98" font-size="10" fill="#92400e">Sarung Mielin</text>
+        <text x="213" y="138" font-size="10" fill="#1e40af">Nod Ranvier</text>
+        <!-- Axon terminal -->
+        <circle cx="430" cy="115" r="10" fill="#2563eb"/>
+        <circle cx="447" cy="105" r="6" fill="#93c5fd" stroke="#2563eb"/>
+        <circle cx="447" cy="125" r="6" fill="#93c5fd" stroke="#2563eb"/>
+        <text x="415" y="145" font-size="10" fill="#1e40af">Terminal Akson</text>
+        <!-- Arrow signal -->
+        <path d="M160 135 L170 130 L160 125" fill="#e63946"/>
+        <text x="155" y="155" font-size="10" fill="#e63946">Impuls saraf →</text>
+        <!-- Brain divisions -->
+        <text x="20" y="195" font-size="11" fill="#1e40af" font-weight="bold">Bahagian Otak:</text>
+        <rect x="110" y="185" width="70" height="20" rx="4" fill="#93c5fd" stroke="#2563eb"/>
+        <text x="120" y="199" font-size="10" fill="#1e40af">Serebrum</text>
+        <rect x="195" y="185" width="75" height="20" rx="4" fill="#bfdbfe" stroke="#2563eb"/>
+        <text x="205" y="199" font-size="10" fill="#1e40af">Serebellum</text>
+        <rect x="285" y="185" width="80" height="20" rx="4" fill="#dbeafe" stroke="#2563eb"/>
+        <text x="295" y="199" font-size="10" fill="#1e40af">Batang Otak</text>
+        <rect x="380" y="185" width="70" height="20" rx="4" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="390" y="199" font-size="10" fill="#0369a1">Diensefalon</text>
+      </svg>
+      <div class="diagram-caption">Rajah 4.1 — Struktur Neuron & Bahagian Otak</div>
+    </div>
+
+    <h3>Pembahagian Sistem Saraf</h3>
+    <div class="two-col">
+      <div class="info-box">
+        <h4>SSP — Sistem Saraf Pusat</h4>
+        <ul>
+          <li><strong>Otak:</strong> Serebrum, serebellum, batang otak, diensefalon</li>
+          <li><strong>Saraf Tunjang:</strong> kawalan refleks, laluan impuls</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h4>SSP — Sistem Saraf Periferi</h4>
+        <ul>
+          <li>Saraf Somatik (sukarela)</li>
+          <li>Saraf Autonomik:
+            <ul>
+              <li>Simpatik (fight-or-flight)</li>
+              <li>Parasimpatik (rest-and-digest)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Jenis Neuron</h3>
+    <table>
+      <tr><th>Jenis</th><th>Fungsi</th><th>Arah Impuls</th></tr>
+      <tr><td>Neuron Aferen (Sensori)</td><td>Hantar deria ke SSP</td><td>Periferi → SSP</td></tr>
+      <tr><td>Neuron Eferen (Motor)</td><td>Hantar arahan dari SSP</td><td>SSP → Otot/Kelenjar</td></tr>
+      <tr><td>Interneuron</td><td>Pemprosesan dalam SSP</td><td>Dalam SSP</td></tr>
+    </table>
+
+    <h3>Fungsi Bahagian Otak</h3>
+    <table>
+      <tr><th>Bahagian</th><th>Fungsi Utama</th></tr>
+      <tr><td>Serebrum</td><td>Pemikiran, ingatan, bahasa, gerakan sukarela, deria</td></tr>
+      <tr><td>Serebellum</td><td>Keseimbangan, koordinasi pergerakan, postur</td></tr>
+      <tr><td>Batang Otak</td><td>Kawal pernafasan, degupan jantung, tekanan darah</td></tr>
+      <tr><td>Hipotalamus</td><td>Kawal suhu, lapar, dahaga, hormon, emosi</td></tr>
+      <tr><td>Talamus</td><td>Pintu impuls deria ke korteks serebrum</td></tr>
+    </table>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Impuls saraf bergerak melalui saluran bermielin pada kelajuan hingga <strong>120 m/s</strong>. Mielin meningkatkan halaju pengaliran secara konduksi saltatori di nod Ranvier.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     5. SISTEM ENDOKRIN
+══════════════════════════════════════════════════ -->
+<div class="section s5" id="s5">
+  <div class="section-header">
+    <div class="section-icon">⚗️</div>
+    <div>
+      <h2>5. Sistem Endokrin</h2>
+      <div class="subtitle">Endocrine System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg" width="500" height="260">
+        <rect width="500" height="260" fill="#f0fdf4" rx="10"/>
+        <!-- Hypothalamus -->
+        <ellipse cx="250" cy="40" rx="55" ry="22" fill="#6ee7b7" stroke="#059669" stroke-width="2"/>
+        <text x="218" y="44" font-size="11" font-weight="bold" fill="#064e3b">Hipotalamus</text>
+        <!-- Pituitary -->
+        <ellipse cx="250" cy="90" rx="35" ry="20" fill="#34d399" stroke="#059669" stroke-width="2"/>
+        <text x="222" y="94" font-size="10" font-weight="bold" fill="#064e3b">Pituitari</text>
+        <line x1="250" y1="62" x2="250" y2="70" stroke="#059669" stroke-width="2"/>
+        <!-- Thyroid -->
+        <ellipse cx="120" cy="115" rx="40" ry="18" fill="#a7f3d0" stroke="#059669" stroke-width="1.5"/>
+        <text x="93" y="118" font-size="10" fill="#064e3b" font-weight="bold">Tiroid</text>
+        <line x1="215" y1="90" x2="160" y2="112" stroke="#059669" stroke-width="1.2" stroke-dasharray="4"/>
+        <!-- Adrenal glands -->
+        <ellipse cx="160" cy="185" rx="35" ry="16" fill="#6ee7b7" stroke="#059669" stroke-width="1.5"/>
+        <text x="135" y="188" font-size="10" fill="#064e3b">Adrenal</text>
+        <line x1="215" y1="100" x2="185" y2="175" stroke="#059669" stroke-width="1.2" stroke-dasharray="4"/>
+        <!-- Pancreas -->
+        <ellipse cx="340" cy="175" rx="45" ry="16" fill="#bbf7d0" stroke="#059669" stroke-width="1.5"/>
+        <text x="318" y="178" font-size="10" fill="#064e3b" font-weight="bold">Pankreas</text>
+        <line x1="270" y1="100" x2="310" y2="165" stroke="#059669" stroke-width="1.2" stroke-dasharray="4"/>
+        <!-- Pineal -->
+        <ellipse cx="380" cy="60" rx="32" ry="16" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+        <text x="360" y="63" font-size="10" fill="#064e3b">Pineal</text>
+        <line x1="285" y1="45" x2="348" y2="55" stroke="#059669" stroke-width="1.2" stroke-dasharray="4"/>
+        <!-- Gonads -->
+        <ellipse cx="250" cy="230" rx="38" ry="15" fill="#a7f3d0" stroke="#059669" stroke-width="1.5"/>
+        <text x="225" y="233" font-size="10" fill="#064e3b">Gonad (Ovari/Testis)</text>
+        <line x1="250" y1="110" x2="250" y2="215" stroke="#059669" stroke-width="1.2" stroke-dasharray="4"/>
+        <!-- Thymus -->
+        <ellipse cx="390" cy="130" rx="35" ry="15" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+        <text x="368" y="133" font-size="10" fill="#064e3b">Timus</text>
+        <line x1="285" y1="98" x2="355" y2="125" stroke="#059669" stroke-width="1.2" stroke-dasharray="4"/>
+      </svg>
+      <div class="diagram-caption">Rajah 5.1 — Kelenjar-Kelenjar Endokrin Utama</div>
+    </div>
+
+    <h3>Kelenjar & Hormon Utama</h3>
+    <table>
+      <tr><th>Kelenjar</th><th>Hormon Utama</th><th>Fungsi</th></tr>
+      <tr><td>Hipotalamus</td><td>CRH, TRH, GnRH</td><td>Kawal pituitari (releasing hormones)</td></tr>
+      <tr><td>Pituitari Anterior</td><td>GH, TSH, ACTH, FSH, LH, PRL</td><td>Kawal kelenjar lain & pertumbuhan</td></tr>
+      <tr><td>Pituitari Posterior</td><td>ADH, Oksitosin</td><td>Keseimbangan air, kontraksi uterus</td></tr>
+      <tr><td>Tiroid</td><td>T3, T4, Kalsitonin</td><td>Metabolisma, kawal kalsium</td></tr>
+      <tr><td>Paratiroid</td><td>PTH</td><td>Naikkan kalsium darah</td></tr>
+      <tr><td>Adrenal Korteks</td><td>Kortisol, Aldosteron</td><td>Tindak balas stres, Na⁺ & K⁺</td></tr>
+      <tr><td>Adrenal Medula</td><td>Adrenalin, Noradrenalin</td><td>Fight-or-flight response</td></tr>
+      <tr><td>Pankreas (Islet)</td><td>Insulin, Glukagon</td><td>Kawal gula darah (glukosa)</td></tr>
+      <tr><td>Pineal</td><td>Melatonin</td><td>Kawal kitaran tidur/bangun</td></tr>
+      <tr><td>Gonad — Ovari</td><td>Estrogen, Progesteron</td><td>Ciri seks wanita, haid, kehamilan</td></tr>
+      <tr><td>Gonad — Testis</td><td>Testosteron</td><td>Ciri seks lelaki, spermatogenesis</td></tr>
+    </table>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Hormon bergerak melalui darah dan bertindak pada sel sasaran yang mempunyai reseptor spesifik. Mekanisme maklum balas negatif (negative feedback) mengawal atur tahap hormon dalam darah.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     6. DARAH DAN SISTEM PEREDARAN DARAH
+══════════════════════════════════════════════════ -->
+<div class="section s6" id="s6">
+  <div class="section-header">
+    <div class="section-icon">❤️</div>
+    <div>
+      <h2>6. Darah & Sistem Peredaran Darah</h2>
+      <div class="subtitle">Blood & Cardiovascular System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg" width="500" height="260">
+        <rect width="500" height="260" fill="#fff5f5" rx="10"/>
+        <!-- Heart shape -->
+        <path d="M250 220 C180 170 90 145 90 105 C90 72 120 55 150 55 C175 55 200 70 215 85 C225 95 235 105 250 115 C265 105 275 95 285 85 C300 70 325 55 350 55 C380 55 410 72 410 105 C410 145 320 170 250 220Z" fill="#fca5a5" stroke="#dc2626" stroke-width="3"/>
+        <!-- Chambers -->
+        <path d="M215 85 L215 175 Q250 200 250 200 L250 115 Q235 105 215 85Z" fill="#f87171" opacity="0.6"/>
+        <path d="M285 85 L285 175 Q250 200 250 200 L250 115 Q265 105 285 85Z" fill="#ef4444" opacity="0.6"/>
+        <path d="M215 85 L180 85 L180 140 L215 140Z" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5" opacity="0.8"/>
+        <path d="M285 85 L320 85 L320 140 L285 140Z" fill="#ef4444" stroke="#dc2626" stroke-width="1.5" opacity="0.8"/>
+        <!-- Labels chambers -->
+        <text x="186" y="118" font-size="9.5" fill="#7f1d1d" font-weight="bold">Atrium Kanan</text>
+        <text x="288" y="118" font-size="9.5" fill="#7f1d1d" font-weight="bold">Atrium Kiri</text>
+        <text x="193" y="165" font-size="9" fill="#7f1d1d">Ventrikel</text>
+        <text x="196" y="176" font-size="9" fill="#7f1d1d">Kanan</text>
+        <text x="260" y="165" font-size="9" fill="#7f1d1d">Ventrikel</text>
+        <text x="263" y="176" font-size="9" fill="#7f1d1d">Kiri</text>
+        <!-- Aorta -->
+        <path d="M310 75 Q320 50 340 40 Q380 25 410 45" stroke="#dc2626" stroke-width="5" fill="none"/>
+        <text x="345" y="35" font-size="10" fill="#991b1b" font-weight="bold">Aorta</text>
+        <!-- Pulmonary artery -->
+        <path d="M230 65 Q215 30 200 20" stroke="#3b82f6" stroke-width="4" fill="none"/>
+        <text x="130" y="18" font-size="10" fill="#1d4ed8">Art. Pulmonari</text>
+        <!-- Vena cava -->
+        <path d="M200 85 Q155 72 120 60" stroke="#60a5fa" stroke-width="4" fill="none"/>
+        <text x="30" y="58" font-size="10" fill="#1d4ed8">Vena Kava</text>
+        <!-- Blood cells legend -->
+        <text x="25" y="195" font-size="11" font-weight="bold" fill="#991b1b">Komponen Darah:</text>
+        <circle cx="35" cy="215" r="8" fill="#ef4444"/>
+        <text x="47" y="219" font-size="10" fill="#7f1d1d">Sel Darah Merah (RBC)</text>
+        <circle cx="150" cy="215" r="8" fill="#f8fafc" stroke="#6b7280"/>
+        <circle cx="155" cy="210" r="4" fill="#6b7280"/>
+        <text x="165" y="219" font-size="10" fill="#374151">Sel Darah Putih (WBC)</text>
+        <circle cx="300" cy="215" r="5" fill="#fbbf24"/>
+        <circle cx="310" cy="218" r="4" fill="#fbbf24"/>
+        <circle cx="320" cy="213" r="5" fill="#fbbf24"/>
+        <text x="330" y="219" font-size="10" fill="#92400e">Platelet (Trombosit)</text>
+        <rect x="25" y="228" width="440" height="14" rx="3" fill="#fef9c3"/>
+        <text x="30" y="238" font-size="9.5" fill="#713f12">Plasma (55%): air, protein, glukosa, hormon, elektrolit, gas terlarut</text>
+      </svg>
+      <div class="diagram-caption">Rajah 6.1 — Jantung & Komponen Darah</div>
+    </div>
+
+    <h3>Komposisi Darah</h3>
+    <table>
+      <tr><th>Komponen</th><th>%</th><th>Fungsi</th></tr>
+      <tr><td>Plasma</td><td>55%</td><td>Pengangkutan nutrien, hormon, sisa metabolisme</td></tr>
+      <tr><td>Eritrosit (RBC)</td><td>44%</td><td>Angkut O₂ (hemoglobin), CO₂</td></tr>
+      <tr><td>Leukosit (WBC)</td><td>&lt;1%</td><td>Imuniti, pertahanan badan</td></tr>
+      <tr><td>Trombosit</td><td>&lt;1%</td><td>Pembekuan darah, hemostasis</td></tr>
+    </table>
+
+    <h3>Kitaran Peredaran Darah</h3>
+    <ul>
+      <li><strong>Peredaran Pulmonari:</strong> Jantung kanan → Paru-paru (penyahkarbonan) → Jantung kiri</li>
+      <li><strong>Peredaran Sistemik:</strong> Jantung kiri → Seluruh badan → Jantung kanan</li>
+    </ul>
+
+    <h3>Kumpulan Darah ABO</h3>
+    <table>
+      <tr><th>Kumpulan</th><th>Antigen (RBC)</th><th>Antibodi (Plasma)</th><th>Boleh Terima Dari</th></tr>
+      <tr><td>A</td><td>A</td><td>Anti-B</td><td>A, O</td></tr>
+      <tr><td>B</td><td>B</td><td>Anti-A</td><td>B, O</td></tr>
+      <tr><td>AB</td><td>A & B</td><td>Tiada</td><td>A, B, AB, O (penerima universal)</td></tr>
+      <tr><td>O</td><td>Tiada</td><td>Anti-A & Anti-B</td><td>O sahaja (penderma universal)</td></tr>
+    </table>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Jantung berdegup kira-kira <strong>100,000 kali sehari</strong>, mengepam lebih 7,000 liter darah. Simpul SA (sinoatrial node) adalah perentak semula jadi jantung.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     7. SISTEM LIMFATIK
+══════════════════════════════════════════════════ -->
+<div class="section s7" id="s7">
+  <div class="section-header">
+    <div class="section-icon">🛡️</div>
+    <div>
+      <h2>7. Sistem Limfatik</h2>
+      <div class="subtitle">Lymphatic System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" width="500" height="220">
+        <rect width="500" height="220" fill="#e0f2fe" rx="10"/>
+        <!-- Body outline simplified -->
+        <ellipse cx="160" cy="42" rx="28" ry="25" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <rect x="133" y="65" width="55" height="75" rx="10" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <rect x="108" y="70" width="22" height="55" rx="8" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <rect x="193" y="70" width="22" height="55" rx="8" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <rect x="133" y="140" width="23" height="60" rx="6" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <rect x="165" y="140" width="23" height="60" rx="6" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+        <!-- Lymph nodes -->
+        <circle cx="160" cy="68" r="7" fill="#0ea5e9" stroke="#0369a1" stroke-width="1.5"/>
+        <circle cx="130" cy="78" r="6" fill="#0ea5e9" stroke="#0369a1" stroke-width="1.5"/>
+        <circle cx="190" cy="78" r="6" fill="#0ea5e9" stroke="#0369a1" stroke-width="1.5"/>
+        <circle cx="140" cy="118" r="6" fill="#0ea5e9" stroke="#0369a1" stroke-width="1.5"/>
+        <circle cx="180" cy="118" r="6" fill="#0ea5e9" stroke="#0369a1" stroke-width="1.5"/>
+        <circle cx="135" cy="148" r="5" fill="#38bdf8" stroke="#0369a1" stroke-width="1.5"/>
+        <circle cx="185" cy="148" r="5" fill="#38bdf8" stroke="#0369a1" stroke-width="1.5"/>
+        <!-- Lymph vessels -->
+        <path d="M160 68 L140 118 L135 148" stroke="#0284c7" stroke-width="1.5" fill="none" stroke-dasharray="3"/>
+        <path d="M160 68 L180 118 L185 148" stroke="#0284c7" stroke-width="1.5" fill="none" stroke-dasharray="3"/>
+        <path d="M130 78 L140 118" stroke="#0284c7" stroke-width="1.5" fill="none" stroke-dasharray="3"/>
+        <path d="M190 78 L180 118" stroke="#0284c7" stroke-width="1.5" fill="none" stroke-dasharray="3"/>
+        <text x="100" y="210" font-size="10" fill="#0369a1" font-weight="bold">Nod Limfa</text>
+        <!-- Right panel: info -->
+        <text x="260" y="30" font-size="13" font-weight="bold" fill="#0369a1">Organ Limfoid Utama</text>
+        <!-- Tonsils -->
+        <ellipse cx="290" cy="60" rx="18" ry="10" fill="#7dd3fc" stroke="#0284c7"/>
+        <text x="312" y="64" font-size="11" fill="#0369a1">Tonsil</text>
+        <!-- Thymus -->
+        <rect x="272" y="85" width="36" height="20" rx="8" fill="#38bdf8" stroke="#0284c7"/>
+        <text x="312" y="99" font-size="11" fill="#0369a1">Timus</text>
+        <!-- Spleen -->
+        <ellipse cx="290" cy="130" rx="22" ry="14" fill="#0ea5e9" stroke="#0284c7"/>
+        <text x="316" y="134" font-size="11" fill="#0369a1">Limpa</text>
+        <!-- Bone marrow -->
+        <rect x="272" y="160" width="36" height="20" rx="5" fill="#bae6fd" stroke="#0284c7"/>
+        <text x="312" y="174" font-size="11" fill="#0369a1">Sumsum Tulang</text>
+        <!-- Peyer's patches -->
+        <rect x="380" y="85" width="100" height="20" rx="5" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="385" y="99" font-size="10" fill="#0369a1">Tampalan Peyer (Usus)</text>
+        <!-- Arrows from lymph to right -->
+        <path d="M310 60 L375 60" stroke="#0284c7" stroke-width="1" stroke-dasharray="3"/>
+        <path d="M310 95 L375 95" stroke="#0284c7" stroke-width="1" stroke-dasharray="3"/>
+        <text x="260" y="205" font-size="10" fill="#0369a1">Limfa: cecair interstisial dalam saluran limfatik → vena subklavia</text>
+      </svg>
+      <div class="diagram-caption">Rajah 7.1 — Sistem Limfatik & Organ Limfoid</div>
+    </div>
+
+    <h3>Fungsi Sistem Limfatik</h3>
+    <ul>
+      <li><strong>Pengaliran balik:</strong> kembalikan cecair interstisial ke peredaran darah</li>
+      <li><strong>Pengangkutan lemak:</strong> kilomifera menyerap lemak dari usus kecil (lakteal)</li>
+      <li><strong>Imuniti:</strong> nod limfa menapis patogen; limfosit (B & T) untuk imuniti</li>
+    </ul>
+
+    <h3>Imuniti: Pertahanan Badan</h3>
+    <div class="two-col">
+      <div class="info-box">
+        <h4>Imuniti Bawaan (Non-Spesifik)</h4>
+        <ul>
+          <li>Kulit & membran mukus (barisan 1)</li>
+          <li>Keradangan, demam, neutrofil</li>
+          <li>Sel NK (Natural Killer)</li>
+          <li>Protein komplemen, interferon</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h4>Imuniti Adaptif (Spesifik)</h4>
+        <ul>
+          <li>Imuniti humoral: Sel-B → antibodi</li>
+          <li>Imuniti sel: Sel-T sitotoksik bunuh sel dijangkiti</li>
+          <li>Sel memori untuk perlindungan jangka panjang</li>
+          <li>Asas vaksinasi</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Terdapat kira-kira <strong>600 nod limfa</strong> dalam badan manusia. Nod limfa membesar semasa jangkitan kerana sel imun berganda dengan pesat.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     8. SISTEM PERNAFASAN
+══════════════════════════════════════════════════ -->
+<div class="section s8" id="s8">
+  <div class="section-header">
+    <div class="section-icon">🫁</div>
+    <div>
+      <h2>8. Sistem Pernafasan</h2>
+      <div class="subtitle">Respiratory System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 270" xmlns="http://www.w3.org/2000/svg" width="500" height="270">
+        <rect width="500" height="270" fill="#f0fdf4" rx="10"/>
+        <!-- Nasal cavity -->
+        <path d="M230 20 Q250 10 270 20 L268 45 Q250 55 232 45 Z" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+        <text x="195" y="38" font-size="10" fill="#166534">Rongga Hidung</text>
+        <!-- Pharynx -->
+        <rect x="232" y="45" width="36" height="25" rx="3" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+        <text x="273" y="62" font-size="10" fill="#166534">Farinks</text>
+        <!-- Larynx -->
+        <rect x="236" y="70" width="28" height="18" rx="3" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+        <text x="268" y="82" font-size="10" fill="#166534">Larinks</text>
+        <!-- Trachea -->
+        <rect x="241" y="88" width="18" height="55" rx="3" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+        <line x1="241" y1="97" x2="259" y2="97" stroke="#16a34a" stroke-width="0.8"/>
+        <line x1="241" y1="106" x2="259" y2="106" stroke="#16a34a" stroke-width="0.8"/>
+        <line x1="241" y1="115" x2="259" y2="115" stroke="#16a34a" stroke-width="0.8"/>
+        <line x1="241" y1="124" x2="259" y2="124" stroke="#16a34a" stroke-width="0.8"/>
+        <line x1="241" y1="133" x2="259" y2="133" stroke="#16a34a" stroke-width="0.8"/>
+        <text x="263" y="118" font-size="10" fill="#166534">Trakea</text>
+        <!-- Bronchi -->
+        <path d="M241 143 Q210 148 185 155" stroke="#16a34a" stroke-width="3" fill="none"/>
+        <path d="M259 143 Q290 148 315 155" stroke="#16a34a" stroke-width="3" fill="none"/>
+        <!-- Left lung -->
+        <path d="M185 155 Q130 160 115 185 Q110 215 130 235 Q160 255 185 245 Q205 235 205 210 Q205 175 185 155Z" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+        <!-- Right lung -->
+        <path d="M315 155 Q370 160 385 185 Q390 215 370 235 Q340 255 315 245 Q295 235 295 210 Q295 175 315 155Z" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+        <!-- Bronchioles -->
+        <path d="M185 160 Q170 175 165 190" stroke="#166534" stroke-width="1.5" fill="none"/>
+        <path d="M185 165 Q175 185 178 200" stroke="#166534" stroke-width="1.5" fill="none"/>
+        <path d="M315 160 Q330 175 335 190" stroke="#166534" stroke-width="1.5" fill="none"/>
+        <path d="M315 165 Q325 185 322 200" stroke="#166534" stroke-width="1.5" fill="none"/>
+        <!-- Alveoli circles -->
+        <circle cx="163" cy="198" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+        <circle cx="178" cy="208" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+        <circle cx="158" cy="212" r="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+        <circle cx="337" cy="198" r="9" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+        <circle cx="322" cy="208" r="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+        <circle cx="342" cy="212" r="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+        <text x="120" y="260" font-size="10" fill="#166534" font-weight="bold">Alveolus (pertukaran gas)</text>
+        <!-- Diaphragm -->
+        <path d="M100 250 Q250 265 400 250" stroke="#15803d" stroke-width="3" fill="none"/>
+        <text x="190" y="268" font-size="11" fill="#166534" font-weight="bold">Diafragma</text>
+        <!-- Gas exchange arrow -->
+        <text x="25" y="200" font-size="10" fill="#166534">O₂ masuk ↑</text>
+        <text x="25" y="215" font-size="10" fill="#dc2626">CO₂ keluar ↓</text>
+      </svg>
+      <div class="diagram-caption">Rajah 8.1 — Struktur Sistem Pernafasan Manusia</div>
+    </div>
+
+    <h3>Laluan Udara</h3>
+    <p>Hidung/Mulut → Farinks → Larinks → Trakea → Bronkus Primer → Bronkus Sekunder → Bronkus Tersier → Bronkiol → Bronkiol Terminal → Alveolus</p>
+
+    <h3>Pertukaran Gas di Alveolus</h3>
+    <div class="two-col">
+      <div class="info-box">
+        <h4>Inspirasi (Menarik Nafas)</h4>
+        <ul>
+          <li>Diafragma mengecut (turun)</li>
+          <li>Otot interkostal luar mengecut</li>
+          <li>Isipadu rongga dada meningkat</li>
+          <li>Tekanan dalam paru-paru menurun</li>
+          <li>Udara masuk (P atmosfera > P paru)</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h4>Ekspirasi (Menghembus Nafas)</h4>
+        <ul>
+          <li>Diafragma relaks (naik)</li>
+          <li>Otot interkostal berehat</li>
+          <li>Isipadu rongga dada berkurang</li>
+          <li>Tekanan dalam paru-paru meningkat</li>
+          <li>Udara keluar (P paru > P atmosfera)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Kapasiti Paru-paru</h3>
+    <table>
+      <tr><th>Parameter</th><th>Nilai Normal (dewasa)</th></tr>
+      <tr><td>Isipadu Tidal (TV)</td><td>~500 mL</td></tr>
+      <tr><td>Kapasiti Vital (VC)</td><td>~4,600 mL</td></tr>
+      <tr><td>Kapasiti Jumlah Paru (TLC)</td><td>~6,000 mL</td></tr>
+      <tr><td>Kadar Pernafasan Normal</td><td>12–20 nafas/minit</td></tr>
+    </table>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Permukaan alveolus dilitupi surfaktan yang mencegah kolaps paru-paru. Kekurangan surfaktan pada bayi pramatang menyebabkan sindrom gawat pernafasan neonatal (NRDS).</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     9. SISTEM PENGHADAMAN
+══════════════════════════════════════════════════ -->
+<div class="section s9" id="s9">
+  <div class="section-header">
+    <div class="section-icon">🫄</div>
+    <div>
+      <h2>9. Sistem Penghadaman</h2>
+      <div class="subtitle">Digestive System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 270" xmlns="http://www.w3.org/2000/svg" width="500" height="270">
+        <rect width="500" height="270" fill="#fff7ed" rx="10"/>
+        <!-- Mouth -->
+        <ellipse cx="120" cy="30" rx="30" ry="15" fill="#fdba74" stroke="#ea580c" stroke-width="2"/>
+        <text x="95" y="34" font-size="10" fill="#7c2d12" font-weight="bold">Mulut</text>
+        <!-- Oesophagus -->
+        <path d="M120 45 L120 90" stroke="#ea580c" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <text x="130" y="70" font-size="10" fill="#7c2d12">Esofagus</text>
+        <!-- Stomach -->
+        <path d="M105 90 Q60 95 55 130 Q55 165 90 170 Q130 175 140 160 Q150 140 135 105 Q128 90 105 90Z" fill="#fdba74" stroke="#ea580c" stroke-width="2"/>
+        <text x="72" y="135" font-size="11" fill="#7c2d12" font-weight="bold">Perut</text>
+        <!-- Small intestine -->
+        <path d="M130 165 Q155 170 160 190 Q165 215 145 225 Q125 235 110 220 Q95 205 110 190 Q130 175 150 185 Q170 195 165 215 Q160 235 140 240 Q120 245 105 232" stroke="#f97316" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <text x="160" y="205" font-size="10" fill="#7c2d12">Usus Kecil</text>
+        <text x="160" y="218" font-size="9" fill="#7c2d12">(Duodenum,</text>
+        <text x="160" y="230" font-size="9" fill="#7c2d12">Jejunum, Ileum)</text>
+        <!-- Large intestine -->
+        <path d="M100 238 Q80 250 75 235 Q65 210 70 185 Q75 160 90 158" stroke="#c2410c" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <text x="20" y="200" font-size="10" fill="#7c2d12">Usus Besar</text>
+        <!-- Rectum -->
+        <path d="M73 250 L73 265" stroke="#9a3412" stroke-width="5"/>
+        <text x="30" y="263" font-size="10" fill="#7c2d12">Rektum/Anus</text>
+        <!-- Liver -->
+        <path d="M280 45 Q330 40 345 70 Q350 95 330 105 Q300 110 280 95 Q260 80 280 45Z" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+        <text x="293" y="80" font-size="11" fill="#78350f" font-weight="bold">Hati</text>
+        <!-- Gallbladder -->
+        <ellipse cx="340" cy="118" rx="18" ry="12" fill="#4ade80" stroke="#16a34a" stroke-width="1.5"/>
+        <text x="315" y="122" font-size="9" fill="#166534">Pundi Hempedu</text>
+        <!-- Pancreas -->
+        <path d="M260 130 Q310 125 355 135 Q365 140 355 150 Q305 155 265 148 Q255 142 260 130Z" fill="#fb923c" stroke="#ea580c" stroke-width="1.5"/>
+        <text x="278" y="145" font-size="10" fill="#7c2d12" font-weight="bold">Pankreas</text>
+        <!-- Bile duct -->
+        <line x1="330" y1="105" x2="300" y2="128" stroke="#d97706" stroke-width="2" stroke-dasharray="3"/>
+        <line x1="340" y1="130" x2="310" y2="140" stroke="#16a34a" stroke-width="2" stroke-dasharray="3"/>
+        <!-- Arrow flow -->
+        <text x="380" y="65" font-size="10" fill="#ea580c">Hati: hempedu,</text>
+        <text x="380" y="78" font-size="10" fill="#ea580c">metabolisma,</text>
+        <text x="380" y="91" font-size="10" fill="#ea580c">detoksifikasi</text>
+        <text x="380" y="115" font-size="10" fill="#166534">Pundi Hempedu:</text>
+        <text x="380" y="128" font-size="10" fill="#166534">simpan hempedu</text>
+        <text x="380" y="153" font-size="10" fill="#9a3412">Pankreas:</text>
+        <text x="380" y="166" font-size="10" fill="#9a3412">enzim pencernaan</text>
+        <text x="380" y="179" font-size="10" fill="#9a3412">& insulin/glukagon</text>
+      </svg>
+      <div class="diagram-caption">Rajah 9.1 — Saluran Alimentari & Organ Aksesori</div>
+    </div>
+
+    <h3>Proses Penghadaman</h3>
+    <ol>
+      <li><strong>Ingesti:</strong> pengambilan makanan</li>
+      <li><strong>Penghadaman Mekanikal:</strong> kunyahan, peristalsis, segmentasi</li>
+      <li><strong>Penghadaman Kimia:</strong> enzim memecah molekul besar</li>
+      <li><strong>Penyerapan:</strong> nutrien masuk ke dalam darah/limfa</li>
+      <li><strong>Pembuangan (Defekasi):</strong> sisa dikeluarkan</li>
+    </ol>
+
+    <h3>Enzim & Penghadaman</h3>
+    <table>
+      <tr><th>Organ</th><th>Enzim/Bahan</th><th>Substrat → Hasil</th></tr>
+      <tr><td>Mulut</td><td>Amilase saliva</td><td>Kanji → Maltosa</td></tr>
+      <tr><td>Perut</td><td>Pepsin (HCl, pH 1.5–3.5)</td><td>Protein → Peptida</td></tr>
+      <tr><td>Usus Kecil</td><td>Lipase, Amilase, Protease (pankreas)</td><td>Lemak, kanji, protein → monomer</td></tr>
+      <tr><td>Hati/Pundi Hempedu</td><td>Hempedu (bile)</td><td>Emulsifikasi lemak</td></tr>
+    </table>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Usus kecil panjangnya <strong>6–7 meter</strong> dan mempunyai permukaan penyerapan seluas lapangan tenis (~250 m²) disebabkan oleh villi dan mikrovilli.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     10. SISTEM URINARI
+══════════════════════════════════════════════════ -->
+<div class="section s10" id="s10">
+  <div class="section-header">
+    <div class="section-icon">🫘</div>
+    <div>
+      <h2>10. Sistem Urinari</h2>
+      <div class="subtitle">Urinary System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg" width="500" height="240">
+        <rect width="500" height="240" fill="#f5f3ff" rx="10"/>
+        <!-- Left Kidney -->
+        <path d="M145 75 Q115 78 108 105 Q105 130 115 150 Q130 168 150 165 Q170 162 175 140 Q178 115 168 92 Q158 72 145 75Z" fill="#a78bfa" stroke="#6d28d9" stroke-width="2"/>
+        <!-- Left kidney cortex -->
+        <path d="M145 88 Q125 90 118 108 Q116 125 122 140 Q132 155 148 153 Q162 151 165 135 Q167 115 160 98 Q153 82 145 88Z" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+        <text x="120" y="125" font-size="11" fill="#3b0764" font-weight="bold">Ginjal</text>
+        <text x="118" y="138" font-size="11" fill="#3b0764" font-weight="bold">Kiri</text>
+        <!-- Right Kidney -->
+        <path d="M355 75 Q325 78 318 105 Q315 130 325 150 Q340 168 360 165 Q380 162 385 140 Q388 115 378 92 Q368 72 355 75Z" fill="#a78bfa" stroke="#6d28d9" stroke-width="2"/>
+        <path d="M355 88 Q335 90 328 108 Q326 125 332 140 Q342 155 358 153 Q372 151 375 135 Q377 115 370 98 Q363 82 355 88Z" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+        <text x="330" y="125" font-size="11" fill="#3b0764" font-weight="bold">Ginjal</text>
+        <text x="328" y="138" font-size="11" fill="#3b0764" font-weight="bold">Kanan</text>
+        <!-- Ureters -->
+        <path d="M163 165 L195 200" stroke="#6d28d9" stroke-width="3" fill="none"/>
+        <path d="M337 165 L305 200" stroke="#6d28d9" stroke-width="3" fill="none"/>
+        <!-- Bladder -->
+        <path d="M195 200 Q215 215 250 218 Q285 215 305 200 Q315 225 300 235 Q280 245 250 246 Q220 245 200 235 Q185 225 195 200Z" fill="#7c3aed" stroke="#4c1d95" stroke-width="2"/>
+        <text x="228" y="230" font-size="11" fill="#fff" font-weight="bold">Pundi Kencing</text>
+        <!-- Urethra -->
+        <line x1="250" y1="246" x2="250" y2="262" stroke="#4c1d95" stroke-width="4"/>
+        <text x="258" y="260" font-size="10" fill="#3b0764">Uretra</text>
+        <!-- Nephron diagram on right -->
+        <text x="395" y="30" font-size="12" font-weight="bold" fill="#4c1d95">Nefron</text>
+        <!-- Glomerulus -->
+        <circle cx="430" cy="60" r="18" fill="#c4b5fd" stroke="#6d28d9" stroke-width="2"/>
+        <circle cx="430" cy="60" r="10" fill="#7c3aed"/>
+        <text x="410" y="63" font-size="9" fill="#fff">Glomerulus</text>
+        <!-- Bowman's -->
+        <text x="398" y="42" font-size="9" fill="#4c1d95">Kapsul</text>
+        <text x="395" y="52" font-size="9" fill="#4c1d95">Bowman</text>
+        <!-- Tubule -->
+        <path d="M430 78 Q440 100 430 115 Q420 130 430 145 Q440 155 430 165" stroke="#6d28d9" stroke-width="3" fill="none"/>
+        <text x="445" y="125" font-size="9" fill="#4c1d95">Tubul</text>
+        <!-- Collecting duct -->
+        <path d="M430 165 L430 180" stroke="#4c1d95" stroke-width="3"/>
+        <text x="432" y="193" font-size="9" fill="#4c1d95">Saluran</text>
+        <text x="432" y="204" font-size="9" fill="#4c1d95">Pengumpul</text>
+        <!-- Labels -->
+        <text x="80" y="185" font-size="10" fill="#4c1d95">Ureter</text>
+      </svg>
+      <div class="diagram-caption">Rajah 10.1 — Sistem Urinari & Struktur Nefron</div>
+    </div>
+
+    <h3>Komponen Sistem Urinari</h3>
+    <table>
+      <tr><th>Organ</th><th>Fungsi</th></tr>
+      <tr><td>Ginjal (2)</td><td>Tapisan darah, pembentukan urin, keseimbangan elektrolit & pH</td></tr>
+      <tr><td>Ureter (2)</td><td>Saluran membawa urin dari ginjal ke pundi kencing</td></tr>
+      <tr><td>Pundi Kencing</td><td>Simpan urin (kapasiti ~500 mL)</td></tr>
+      <tr><td>Uretra</td><td>Saluran membuang urin keluar badan</td></tr>
+    </table>
+
+    <h3>Proses Pembentukan Urin dalam Nefron</h3>
+    <ol>
+      <li><strong>Penapisan Glomerular:</strong> tekanan tinggi tolak cecair dari kapilari ke kapsul Bowman (penapisan bukan selektif)</li>
+      <li><strong>Penyerapan Semula (Reabsorpsi):</strong> glukosa, asid amino, Na⁺, air diserap semula di tubul proksimal & gelung Henle</li>
+      <li><strong>Penyekresian Tubular:</strong> ion H⁺, K⁺, ubat, toksin dikeluarkan ke dalam lumen tubul</li>
+      <li><strong>Pengumpulan:</strong> urin pekat dikumpul di saluran pengumpul → pelvis renal → ureter</li>
+    </ol>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Setiap ginjal mengandungi kira-kira <strong>1 juta nefron</strong>. Ginjal menapis ~180 liter darah sehari tetapi hanya ~1.5 liter urin yang dikeluarkan.</div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     11. SISTEM REPRODUKTIF
+══════════════════════════════════════════════════ -->
+<div class="section s11" id="s11">
+  <div class="section-header">
+    <div class="section-icon">🔬</div>
+    <div>
+      <h2>11. Sistem Reproduktif</h2>
+      <div class="subtitle">Reproductive System</div>
+    </div>
+  </div>
+  <div class="section-body">
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg" width="500" height="240">
+        <rect width="500" height="240" fill="#fdf2f8" rx="10"/>
+        <!-- Female system left -->
+        <text x="25" y="22" font-size="13" font-weight="bold" fill="#831843">Sistem Wanita</text>
+        <!-- Ovaries -->
+        <ellipse cx="85" cy="90" rx="22" ry="16" fill="#f9a8d4" stroke="#be185d" stroke-width="2"/>
+        <ellipse cx="185" cy="90" rx="22" ry="16" fill="#f9a8d4" stroke="#be185d" stroke-width="2"/>
+        <text x="62" y="118" font-size="9" fill="#831843" font-weight="bold">Ovari Kiri</text>
+        <text x="162" y="118" font-size="9" fill="#831843" font-weight="bold">Ovari Kanan</text>
+        <!-- Fallopian tubes -->
+        <path d="M107 88 Q130 72 158 88" stroke="#be185d" stroke-width="2.5" fill="none"/>
+        <!-- Uterus -->
+        <path d="M107 95 Q100 120 105 145 Q115 165 135 168 Q155 165 165 145 Q170 120 163 95 Z" fill="#f472b6" stroke="#be185d" stroke-width="2"/>
+        <text x="115" y="140" font-size="10" fill="#831843" font-weight="bold">Uterus</text>
+        <!-- Cervix -->
+        <rect x="122" y="168" width="26" height="20" rx="4" fill="#f9a8d4" stroke="#be185d" stroke-width="1.5"/>
+        <text x="112" y="182" font-size="9" fill="#831843">Serviks</text>
+        <!-- Vagina -->
+        <rect x="122" y="188" width="26" height="30" rx="3" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+        <text x="112" y="208" font-size="9" fill="#831843">Faraj</text>
+        <!-- Egg cell -->
+        <circle cx="90" cy="80" r="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+        <circle cx="90" cy="80" r="4" fill="#f59e0b"/>
+        <text x="68" y="68" font-size="9" fill="#92400e">Ovum</text>
+        <!-- Male system right -->
+        <text x="300" y="22" font-size="13" font-weight="bold" fill="#831843">Sistem Lelaki</text>
+        <!-- Testes -->
+        <ellipse cx="360" cy="160" rx="22" ry="26" fill="#fca5a5" stroke="#9d174d" stroke-width="2"/>
+        <ellipse cx="410" cy="160" rx="22" ry="26" fill="#fca5a5" stroke="#9d174d" stroke-width="2"/>
+        <text x="342" y="193" font-size="9" fill="#831843">Testis Kiri</text>
+        <text x="392" y="193" font-size="9" fill="#831843">Testis Kanan</text>
+        <!-- Epididymis -->
+        <path d="M382 140 Q390 125 410 135" stroke="#9d174d" stroke-width="2" fill="none"/>
+        <!-- Vas deferens -->
+        <path d="M382 140 Q380 110 370 90 Q360 70 355 55" stroke="#9d174d" stroke-width="2.5" fill="none"/>
+        <path d="M410 135 Q415 110 415 90 Q415 70 415 55" stroke="#9d174d" stroke-width="2.5" fill="none"/>
+        <!-- Prostate -->
+        <ellipse cx="385" cy="90" rx="24" ry="14" fill="#fda4af" stroke="#9d174d" stroke-width="1.5"/>
+        <text x="362" y="93" font-size="9" fill="#831843" font-weight="bold">Prostat</text>
+        <!-- Urethra -->
+        <rect x="380" y="104" width="10" height="40" rx="3" fill="#fda4af" stroke="#9d174d" stroke-width="1.5"/>
+        <!-- Penis -->
+        <rect x="375" y="144" width="20" height="50" rx="6" fill="#f87171" stroke="#9d174d" stroke-width="1.5"/>
+        <text x="352" y="215" font-size="9" fill="#831843">Penis/Uretra</text>
+        <!-- Seminal vesicle -->
+        <ellipse cx="430" cy="78" rx="18" ry="10" fill="#fecdd3" stroke="#9d174d" stroke-width="1.5"/>
+        <text x="434" y="81" font-size="9" fill="#831843">Vesikel</text>
+        <text x="434" y="92" font-size="9" fill="#831843">Seminal</text>
+        <!-- Sperm cell -->
+        <circle cx="340" cy="155" r="5" fill="#dc2626"/>
+        <path d="M345 155 Q355 150 365 155" stroke="#dc2626" stroke-width="1.5" fill="none"/>
+        <text x="310" y="148" font-size="9" fill="#7f1d1d">Sperma</text>
+      </svg>
+      <div class="diagram-caption">Rajah 11.1 — Sistem Reproduktif Wanita (Kiri) & Lelaki (Kanan)</div>
+    </div>
+
+    <div class="two-col">
+      <div class="info-box">
+        <h4>Sistem Reproduktif Wanita</h4>
+        <table>
+          <tr><th>Organ</th><th>Fungsi</th></tr>
+          <tr><td>Ovari</td><td>Hasilkan ovum & estrogen/progesteron</td></tr>
+          <tr><td>Tiub Fallopian</td><td>Laluan ovum, tapak persenyawaan</td></tr>
+          <tr><td>Uterus</td><td>Implantasi zigot, perkembangan fetus</td></tr>
+          <tr><td>Serviks</td><td>Penghubung uterus-faraj</td></tr>
+          <tr><td>Faraj</td><td>Saluran kelahiran, hubungan seksual</td></tr>
+        </table>
+      </div>
+      <div class="info-box">
+        <h4>Sistem Reproduktif Lelaki</h4>
+        <table>
+          <tr><th>Organ</th><th>Fungsi</th></tr>
+          <tr><td>Testis</td><td>Hasilkan sperma & testosteron</td></tr>
+          <tr><td>Epididimis</td><td>Pematangan & simpan sperma</td></tr>
+          <tr><td>Vas Deferens</td><td>Saluran sperma ke uretra</td></tr>
+          <tr><td>Prostat</td><td>Hasilkan cecair seminal alkali</td></tr>
+          <tr><td>Vesikel Seminal</td><td>Hasilkan fruktosa (tenaga sperma)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h3>Kitaran Haid (Menstrual Cycle)</h3>
+    <table>
+      <tr><th>Fasa</th><th>Hari</th><th>Peristiwa Utama</th></tr>
+      <tr><td>Menstruasi</td><td>1–5</td><td>Luruhnya endometrium</td></tr>
+      <tr><td>Folikuler</td><td>1–13</td><td>FSH → folikel matang, estrogen ↑</td></tr>
+      <tr><td>Ovulasi</td><td>~14</td><td>Lonjakan LH → ovum dibebaskan</td></tr>
+      <tr><td>Luteal</td><td>15–28</td><td>Korpus luteum → progesteron ↑; jika tiada persenyawaan, haid berlaku</td></tr>
+    </table>
+
+    <h3>Spermatogenesis vs Oogenesis</h3>
+    <div class="two-col">
+      <div class="info-box">
+        <h4>Spermatogenesis (Lelaki)</h4>
+        <ul>
+          <li>Berlaku dalam tubul seminiferus testis</li>
+          <li>Bermula pada akil baligh, berterusan sepanjang hayat</li>
+          <li>Menghasilkan ~300 juta sperma sehari</li>
+          <li>Sperma matang dalam epididimis (14–20 hari)</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h4>Oogenesis (Wanita)</h4>
+        <ul>
+          <li>Bermula semasa fetus dalam kandungan</li>
+          <li>Berhenti pada Meiosis I sehingga ovulasi</li>
+          <li>Hanya 1 ovum matang setiap kitaran</li>
+          <li>Berhenti selepas menopaus (~50 tahun)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="key-fact"><strong>📌 Fakta Penting:</strong> Persenyawaan berlaku di tiub Fallopian dalam masa 12–24 jam selepas ovulasi. Zigot memerlukan 6–10 hari untuk berimplant di endometrium uterus.</div>
+
+  </div>
+</div>
+
+<!-- Summary Table -->
+<div class="section" style="border-color:#3b82d4;">
+  <div class="section-header" style="background:#eff6ff;border-bottom:2px solid #3b82d4;">
+    <div class="section-icon" style="background:#3b82d4;color:#fff;">📋</div>
+    <div>
+      <h2>Ringkasan: 11 Sistem Tubuh Manusia</h2>
+      <div class="subtitle">Summary Table</div>
+    </div>
+  </div>
+  <div class="section-body">
+    <table>
+      <tr><th>#</th><th>Sistem</th><th>Organ Utama</th><th>Fungsi Teras</th></tr>
+      <tr><td>1</td><td>Integumen</td><td>Kulit, rambut, kuku</td><td>Perlindungan, termoregulasi, sensasi</td></tr>
+      <tr><td>2</td><td>Skeletal</td><td>206 tulang, sendi, ligamen</td><td>Sokongan, perlindungan, hematopoiesis</td></tr>
+      <tr><td>3</td><td>Otot</td><td>Otot rangka, jantung, licin</td><td>Pergerakan, postur, penjanaan haba</td></tr>
+      <tr><td>4</td><td>Saraf</td><td>Otak, saraf tunjang, saraf periferi</td><td>Kawalan, koordinasi, deria</td></tr>
+      <tr><td>5</td><td>Endokrin</td><td>Pituitari, tiroid, adrenal, pankreas</td><td>Kawalan hormon, homeostasis</td></tr>
+      <tr><td>6</td><td>Peredaran Darah</td><td>Jantung, arteri, vena, kapilari</td><td>Pengangkutan O₂, nutrien, sisa</td></tr>
+      <tr><td>7</td><td>Limfatik</td><td>Nod limfa, limpa, timus</td><td>Imuniti, pengaliran limfa</td></tr>
+      <tr><td>8</td><td>Pernafasan</td><td>Paru-paru, trakea, alveolus</td><td>Pertukaran gas O₂/CO₂</td></tr>
+      <tr><td>9</td><td>Penghadaman</td><td>Perut, usus, hati, pankreas</td><td>Penghadaman & penyerapan nutrien</td></tr>
+      <tr><td>10</td><td>Urinari</td><td>Ginjal, ureter, pundi kencing</td><td>Penapisan darah, buang sisa nitrogen</td></tr>
+      <tr><td>11</td><td>Reproduktif</td><td>Gonad, uterus/testis</td><td>Penghasilan gamet, pembiakan</td></tr>
+    </table>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <p>Nota Anatomi &amp; Fisiologi — Modul Lengkap 11 Sistem Tubuh Manusia &nbsp;|&nbsp; <strong>Made with IBM Bob</strong></p>
+</footer>
+
+</body>
+</html>
